@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="header-navigation">
         <a href="#"><img src="#" class="header-logo" alt="Седона логотип"></a>
         <ul class="header-menu-list">
@@ -23,8 +23,8 @@
         <button class="button" type="button">Хочу сюда!</button>
       </div>
     </header>
-    <main class="page-main">
-      <section class="filter">
+    <main class="page-main" data-test="main">
+      <section class="filter" data-test="filter">
         <h1>Гостиницы Седоны</h1>
         <ol>
           <li><a href="index.html" class="breadcrumb-home-icon"><span class="visually-hidden">На главную</span></a></li>
@@ -62,7 +62,7 @@
           </div>
         </form>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <div class="catalog-controls">
           <h2>Найдено гостиниц: 38</h2>
           <select name="sort" aria-label="Сортировка">
@@ -196,7 +196,7 @@
           <a href="#">10</a>
         </nav>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -205,7 +205,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="page-footer-socials">
         <li><a class="vk-icon" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в контакт</span><img src="#" alt="Vk"></a></li>
         <li><a class="tg-icon" href="https://t.me/htmlacademy"><span class="visually-hidden">Перейти в телеграм</span><img src="#" alt="Telegram"></a></li>
