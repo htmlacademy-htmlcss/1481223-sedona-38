@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1481223-sedona-38/2/">
+</head>
+  <body>
+    <header class="page-header" data-test="header">
+      <nav class="header-navigation">
+        <a href="#"><img src="#" class="header-logo" alt="Седона логотип"></a>
+        <ul class="header-menu-list">
+          <li class="header-menu-item"><a href="index.html">Главная</a></li>
+          <li class="header-menu-item"><a href="#">О седоне</a></li>
+          <li class="header-menu-item active"><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="header-right-menu-list">
+          <li><a href="#" class="search-icon"><span class="visually-hidden">Поиск</span><img src="#" alt="Поиск"></a></li>
+          <li><a href="#" class="favorite-icon"><span class="visually-hidden">Избранное</span><img src="#" alt="Избранное"><span class="favorite-count">12</span></a></li>
+        </ul>
+      </nav>
+      <div class="buttons-wrapper">
+        <button class="button" type="button">Хочу сюда!</button>
+      </div>
+    </header>
+    <main class="page-main" data-test="main">
+      <section class="filter" data-test="filter">
+        <h1>Гостиницы Седоны</h1>
+        <ol>
+          <li><a href="index.html" class="breadcrumb-home-icon"><span class="visually-hidden">На главную</span></a></li>
+          <li><a href="">Гостиницы</a></li>
+        </ol>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="infrastrucure">
+            <legend>Инфраструктура:</legend>
+            <ul class="infrastrucure-list">
+              <li><label><input type="checkbox" name="pool" checked><span>Бассейн</span></label></li>
+              <li><label><input type="checkbox" name="parking" checked><span>Парковка</span></label></li>
+              <li><label><input type="checkbox" name="wi-fi"><span>Wi-Fi</span></label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="home-types">
+            <legend>Тип жилья:</legend>
+            <ul class="home-types-list">
+              <li><label><input type="radio" name="type" checked><span>Гостиница</span></label></li>
+              <li><label><input type="radio" name="type"><span>Мотель</span></label></li>
+              <li><label><input type="radio" name="type"><span>Апартаменты</span></label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость, ₽:</legend>
+            <input type="text" class="price-from" placeholder="от" value="0">
+            <input type="text" class="price-to" placeholder="до" value="9000">
+            <div class="range">
+              <div class="drag-from"></div>
+              <div class="drag-to"></div>
+            </div>
+          </fieldset>
+          <div class="filter-battons">
+            <button class="button-submit" type="submit">Применить</button>
+            <button class="button-reset" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </section>
+      <section class="catalog" data-test="catalog">
+        <div class="catalog-controls">
+          <h2>Найдено гостиниц: 38</h2>
+          <select name="sort" aria-label="Сортировка">
+            <option value="Сначала дешевые">Сначала дешевые</option>
+          </select>
+          <div class="catalog-controls-buttons">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_33548_2035)">
+              <path d="M20 17H16V23H20V17Z" fill="black"/>
+              <path d="M32 17H28V23H32V17Z" fill="black"/>
+              <path d="M26 17H22V23H26V17Z" fill="black"/>
+              <path d="M20 25H16V31H20V25Z" fill="black"/>
+              <path d="M32 25H28V31H32V25Z" fill="black"/>
+              <path d="M26 25H22V31H26V25Z" fill="black"/>
+              </g>
+              <rect x="1" y="1" width="46" height="46" rx="3" stroke="black" stroke-width="2"/>
+              <defs>
+              <clipPath id="clip0_33548_2035">
+              <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_33548_2210)">
+              <path d="M32 29H16V31H32V29Z" fill="black"/>
+              <path d="M30 19V25H18V19H30ZM32 17H16V27H32V17Z" fill="black"/>
+              </g>
+              <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E5E5E5" stroke-width="2"/>
+              <defs>
+              <clipPath id="clip0_33548_2210">
+              <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_33548_2388)">
+              <path d="M18 17H16V19H18V17Z" fill="black"/>
+              <path d="M32 17H20V19H32V17Z" fill="black"/>
+              <path d="M18 21H16V23H18V21Z" fill="black"/>
+              <path d="M32 21H20V23H32V21Z" fill="black"/>
+              <path d="M18 25H16V27H18V25Z" fill="black"/>
+              <path d="M32 25H20V27H32V25Z" fill="black"/>
+              <path d="M18 29H16V31H18V29Z" fill="black"/>
+              <path d="M32 29H20V31H32V29Z" fill="black"/>
+              </g>
+              <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E5E5E5" stroke-width="2"/>
+              <defs>
+              <clipPath id="clip0_33548_2388">
+              <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
+              </clipPath>
+              </defs>
+            </svg>              
+          </div>
+        </div>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="Amara Resort & Spa">
+              <h3><a href="#">Amara Resort & Spa</a></h3>
+              <p><span>Гостиница</span><span class="price">От 4000 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">Подробнее</a>
+                <button class="button favorite-button">В избранное</button>
+                <div class="stars stars-4">
+                  <span class="visually-hidden">4 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 8,5
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="Villas at Poco Diablo">
+              <h3><a href="#">Villas at Poco Diablo</a></h3>
+              <p><span>Гостиница</span><span class="price">От 5000 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">Подробнее</a>
+                <button class="button favorite-button active">В избранное</button>
+                <div class="stars stars-4">
+                  <span class="visually-hidden">4 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 9,2
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="Desert Quail Inn">
+              <h3><a href="#">Desert Quail Inn</a></h3>
+              <p><span>Гостиница</span><span class="price">От 2500 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">Подробнее</a>
+                <button class="button favorite-button">В избранное</button>
+                <div class="stars stars-3">
+                  <span class="visually-hidden">3 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 6,9
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="GreenTree Inn">
+              <h3><a href="#">GreenTree Inn</a></h3>
+              <p><span>Гостиница</span><span class="price">От 1500 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">Подробнее</a>
+                <button class="button favorite-button">В избранное</button>
+                <div class="stars stars-2">
+                  <span class="visually-hidden">2 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 5,0
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <nav class="catalog-navigation">
+          <ul class="catalog-navigation-links">
+            <li><a class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">10</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="subscribe" data-test="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" name="email" placeholder="Ваш e-mail">
+          <button type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer" data-test="footer">
+      <ul class="page-footer-socials">
+        <li><a class="vk-icon" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в контакт</span><img src="#" alt="Vk"></a></li>
+        <li><a class="tg-icon" href="https://t.me/htmlacademy"><span class="visually-hidden">Перейти в телеграм</span><img src="#" alt="Telegram"></a></li>
+        <li><a class="youtube-icon" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Перейти в ютуб</span><img src="#" alt="Youtube"></a></li>
+      </ul>
+      <a href="tel:78128121212">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/"><img class="footer-logo" src="#" alt="Лого академии"></a>
+    </footer>
+  </body>
+</html>
