@@ -34,21 +34,27 @@
           <fieldset class="infrastrucure">
             <legend>Инфраструктура:</legend>
             <ul class="infrastrucure-list">
-              <li><label><input type="checkbox" name="pool"><span>Бассейн</span></label></li>
-              <li><label><input type="checkbox" name="parking"><span>Парковка</span></label></li>
+              <li><label><input type="checkbox" name="pool" checked><span>Бассейн</span></label></li>
+              <li><label><input type="checkbox" name="parking" checked><span>Парковка</span></label></li>
               <li><label><input type="checkbox" name="wi-fi"><span>Wi-Fi</span></label></li>
             </ul>
           </fieldset>
           <fieldset class="home-types">
             <legend>Тип жилья:</legend>
             <ul class="home-types-list">
-              <li><label><input type="radio" name="type"><span>Гостиница</span></label></li>
+              <li><label><input type="radio" name="type" checked><span>Гостиница</span></label></li>
               <li><label><input type="radio" name="type"><span>Мотель</span></label></li>
               <li><label><input type="radio" name="type"><span>Апартаменты</span></label></li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Стоимость, ₽:</legend>
+            <input type="text" class="price-from" placeholder="от" value="0">
+            <input type="text" class="price-to" placeholder="до" value="9000">
+            <div class="range">
+              <div class="drag-from"></div>
+              <div class="drag-to"></div>
+            </div>
           </fieldset>
           <div class="filter-battons">
             <button class="button-submit" type="submit">Применить</button>
@@ -57,7 +63,138 @@
         </form>
       </section>
       <section class="catalog">
-
+        <div class="catalog-controls">
+          <h2>Найдено гостиниц: 38</h2>
+          <select name="sort">
+            <option value="Сначала дешевые">Сначала дешевые</option>
+          </select>
+          <div class="catalog-controls-buttons">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_33548_2035)">
+              <path d="M20 17H16V23H20V17Z" fill="black"/>
+              <path d="M32 17H28V23H32V17Z" fill="black"/>
+              <path d="M26 17H22V23H26V17Z" fill="black"/>
+              <path d="M20 25H16V31H20V25Z" fill="black"/>
+              <path d="M32 25H28V31H32V25Z" fill="black"/>
+              <path d="M26 25H22V31H26V25Z" fill="black"/>
+              </g>
+              <rect x="1" y="1" width="46" height="46" rx="3" stroke="black" stroke-width="2"/>
+              <defs>
+              <clipPath id="clip0_33548_2035">
+              <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_33548_2210)">
+              <path d="M32 29H16V31H32V29Z" fill="black"/>
+              <path d="M30 19V25H18V19H30ZM32 17H16V27H32V17Z" fill="black"/>
+              </g>
+              <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E5E5E5" stroke-width="2"/>
+              <defs>
+              <clipPath id="clip0_33548_2210">
+              <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_33548_2388)">
+              <path d="M18 17H16V19H18V17Z" fill="black"/>
+              <path d="M32 17H20V19H32V17Z" fill="black"/>
+              <path d="M18 21H16V23H18V21Z" fill="black"/>
+              <path d="M32 21H20V23H32V21Z" fill="black"/>
+              <path d="M18 25H16V27H18V25Z" fill="black"/>
+              <path d="M32 25H20V27H32V25Z" fill="black"/>
+              <path d="M18 29H16V31H18V29Z" fill="black"/>
+              <path d="M32 29H20V31H32V29Z" fill="black"/>
+              </g>
+              <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E5E5E5" stroke-width="2"/>
+              <defs>
+              <clipPath id="clip0_33548_2388">
+              <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
+              </clipPath>
+              </defs>
+            </svg>              
+          </div>
+        </div>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="Amara Resort & Spa">
+              <h3>Amara Resort & Spa</h3>
+              <p><span>Гостиница</span><span class="price">От 4000 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">подробнее</a>
+                <button class="button favorite-button">в избранное</button>
+                <div class="stars stars-4">
+                  <span class="visually-hidden">4 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 8,5
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="Villas at Poco Diablo">
+              <h3>Villas at Poco Diablo</h3>
+              <p><span>Гостиница</span><span class="price">От 5000 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">подробнее</a>
+                <button class="button favorite-button active">в избранное</button>
+                <div class="stars stars-4">
+                  <span class="visually-hidden">4 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 9,2
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="Desert Quail Inn">
+              <h3>Desert Quail Inn</h3>
+              <p><span>Гостиница</span><span class="price">От 2500 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">подробнее</a>
+                <button class="button favorite-button">в избранное</button>
+                <div class="stars stars-3">
+                  <span class="visually-hidden">3 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 6,9
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-item-article">
+              <img src="#" alt="GreenTree Inn">
+              <h3>GreenTree Inn</h3>
+              <p><span>Гостиница</span><span class="price">От 1500 ₽</span></p>
+              <div class="catalog-item-buttons-wrapper">
+                <a href="#" class="button">подробнее</a>
+                <button class="button favorite-button">в избранное</button>
+                <div class="stars stars-2">
+                  <span class="visually-hidden">2 звезды</span>
+                </div>
+                <div class="rating">
+                  Рейтинг: 5,0
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <nav class="catalog-navigation">
+          <a class="active" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">...</a>
+          <a href="#">10</a>
+        </nav>
       </section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
@@ -70,12 +207,12 @@
     </main>
     <footer class="page-footer">
       <ul class="page-footer-socials">
-        <li><a class="vk-icon" href="#"><span class="visually-hidden">Перейти в контакт</span></a></li>
-        <li><a class="tg-icon" href="#"><span class="visually-hidden">Перейти в телеграм</span></a></li>
-        <li><a class="youtube-icon" href="#"><span class="visually-hidden">Перейти в ютуб</span></a></li>
+        li><a class="vk-icon" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в контакт</span></a></li>
+        <li><a class="tg-icon" href="https://t.me/htmlacademy"><span class="visually-hidden">Перейти в телеграм</span></a></li>
+        <li><a class="youtube-icon" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Перейти в ютуб</span></a></li>
       </ul>
       <a href="tel:78128121212">+7 (812) 812-12-12</a>
-      <a href="#"><img class="footer-logo" src="#" alt="Лого академии"></a>
+      <a href="https://htmlacademy.ru/"><img class="footer-logo" src="#" alt="Лого академии"></a>
     </footer>
   </body>
 </html>
