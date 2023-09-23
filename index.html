@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="page-header" data-test="header">
+      <a href="#"><img src="#" class="header-logo" alt="Седона логотип"></a>
       <nav class="header-navigation">
-        <a href="#"><img src="#" class="header-logo" alt="Седона логотип"></a>
         <ul class="header-menu-list">
-          <li class="header-menu-item active"><a href="index.html">Главная</a></li>
+          <li class="header-menu-item is-active"><a href="index.html">Главная</a></li>
           <li class="header-menu-item"><a href="#">О седоне</a></li>
           <li class="header-menu-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -20,7 +20,7 @@
         </ul>
       </nav>
       <div class="buttons-wrapper">
-        <button class="button" type="button">Хочу сюда!</button>
+        <a href="#" class="button">Хочу сюда!</a>
       </div>
     </header>
     <main class="page-main" data-test="main">
@@ -102,7 +102,7 @@
       <section class="search" data-test="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <a href="#" class="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
@@ -119,8 +119,8 @@
         <li><a class="tg-icon" href="https://t.me/htmlacademy"><span class="visually-hidden">Перейти в телеграм</span><img src="#" alt="Telegram"></a></li>
         <li><a class="youtube-icon" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Перейти в ютуб</span><img src="#" alt="Youtube"></a></li>
       </ul>
-      <a href="tel:78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/"><img class="footer-logo" src="#" alt="Лого академии"></a>
+      <div class="phones"><a href="tel:78128121212">+7 (812) 812-12-12</a></div>
+      <div class="page-footer-logo-wrapper"><a href="https://htmlacademy.ru/"><img class="footer-logo" src="#" alt="Лого академии"></a></div>
     </footer>
   </body>
 </html>
