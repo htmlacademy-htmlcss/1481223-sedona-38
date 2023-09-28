@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="page-header" data-test="header">
-      <a href="#"><img src="images/header/logo.svg" width="140" height="70" class="header-logo" alt="Седона логотип"></a>
+      <a href="index.html"><img src="images/header/logo.svg" width="140" height="70" class="header-logo" alt="Седона логотип"></a>
       <nav class="header-navigation">
         <ul class="header-menu-list">
           <li class="header-menu-item"><a href="index.html">Главная</a></li>
@@ -28,7 +29,7 @@
         <h1>Гостиницы Седоны</h1>
         <ol>
           <li><a href="index.html" class="breadcrumb-home-icon"><span class="visually-hidden">На главную</span></a></li>
-          <li><a href="">Гостиницы</a></li>
+          <li><a href="" aria-current="page">Гостиницы</a></li>
         </ol>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="infrastrucure">
@@ -49,11 +50,16 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость, ₽:</legend>
-            <input type="text" class="price-from" placeholder="от" value="0">
-            <input type="text" class="price-to" placeholder="до" value="9000">
-            <div class="range">
-              <div class="drag-from"></div>
-              <div class="drag-to"></div>
+            <div class="filter-range">
+              <label><input type="text" class="price-from" value="0">от</label>
+              <label><input type="text" class="price-to"  value="9000">до</label>  
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
             </div>
           </fieldset>
           <div class="filter-battons">
@@ -117,8 +123,8 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <article class="catalog-item-article">
-              <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
-              <h3><a href="#">Amara Resort & Spa</a></h3>
+              <a href="#" tabindex="-1"><img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa"></a>
+              <h3><a href="#" tabindex="-1"></a>>Amara Resort & Spa</a></h3>
               <p><span>Гостиница</span><span class="price">От 4000 ₽</span></p>
               <div class="catalog-item-buttons-wrapper">
                 <a href="#" class="button">Подробнее</a>
@@ -134,8 +140,8 @@
           </li>
           <li class="catalog-item">
             <article class="catalog-item-article">
-              <img src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
-              <h3><a href="#">Villas at Poco Diablo</a></h3>
+              <a href="#" tabindex="-1"><img src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo"></a>
+              <h3><a href="#" tabindex="-1"></a>>Villas at Poco Diablo</a></h3>
               <p><span>Гостиница</span><span class="price">От 5000 ₽</span></p>
               <div class="catalog-item-buttons-wrapper">
                 <a href="#" class="button">Подробнее</a>
@@ -151,8 +157,8 @@
           </li>
           <li class="catalog-item">
             <article class="catalog-item-article">
-              <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
-              <h3><a href="#">Desert Quail Inn</a></h3>
+              <a href="#" tabindex="-1"><img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn"></a>
+              <h3><a href="#" tabindex="-1"></a>>Desert Quail Inn</a></h3>
               <p><span>Гостиница</span><span class="price">От 2500 ₽</span></p>
               <div class="catalog-item-buttons-wrapper">
                 <a href="#" class="button">Подробнее</a>
@@ -168,8 +174,8 @@
           </li>
           <li class="catalog-item">
             <article class="catalog-item-article">
-              <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
-              <h3><a href="#">GreenTree Inn</a></h3>
+              <a href="#" tabindex="-1"><img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn"></a>
+              <h3><a href="#" tabindex="-1"></a>>GreenTree Inn</a></h3>
               <p><span>Гостиница</span><span class="price">От 1500 ₽</span></p>
               <div class="catalog-item-buttons-wrapper">
                 <a href="#" class="button">Подробнее</a>
