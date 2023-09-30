@@ -1,3 +1,195 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  background-color: #F2F2F2;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-header, .page-main, .page-footer {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.header-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-menu-item a{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:#000;
+  text-decoration: none;
+}
+
+.header-menu-item.is-active a {
+  text-decoration:underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 21px;
+  text-underline-position: under;
+}
+
+.header-right-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-right-menu-list a {
+  text-decoration: none;
+}
+.favorite-count {
+  color: #fff;
+  width:20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  display: flex;
+  font-size: 10px;
+  line-height: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  display: inline-block;
+}
+
+.hero-h1 {
+  margin: 0;
+}
+
+.hero{
+  background-image: url("../images/hero/divider.png"), url("../images/hero/sedona-hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 485px;
+  background-position: bottom;
+  box-sizing: border-box;
+  padding-top: 51px;
+}
+
+.hero img{
+  display: block;
+  width: 458px;
+  margin: 0 auto;
+}
+
+.advantages-section-text h2, .service-section-text h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin:0px;
+}
+
+.advantages-section-text h2 {
+  margin-bottom: 25px;
+}
+
+.advantages-section-text {
+  padding-top: 69px;
+  padding-bottom: 69px;
+  margin-bottom: 21px;
+}
+
+.service-section-text h2{
+  margin-bottom: 20px;
+}
+
+.service-section-text {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.advantages-section-text p, .service-section-text p {
+  text-align: center;
+  margin:0px;
+}
+
+.advantages-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages-text-wrapper h3, .services-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.advantages-text-wrapper p, .services-item p {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.services {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.search{
+  padding: 96px 0;
+  text-align: center;
+}
+
+.search h2{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.search p {
+  margin: 0;
+  margin-bottom: 54px;
+}
+
 .filter-range {
   width: 380px;
   
