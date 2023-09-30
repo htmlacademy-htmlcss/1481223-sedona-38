@@ -111,6 +111,14 @@ body {
   background-color: #82B3D3;
 }
 
+.favorite-button {
+  background-color: #82B3D3;
+}
+
+.favorite-button.is-active {
+  background-color: #7DB54F;
+}
+
 .hero-h1 {
   margin: 0;
 }
@@ -242,6 +250,35 @@ body {
   padding: 12px 20px 12px 20px;
   font-size: 18px;
   line-height: 24px;
+  background: #F2F2F2;
+}
+
+.filter {
+  padding: 35px 70px;
+  background-image: url("../images/filter/filter-background.jpg");
+  background-repeat: no-repeat;
+  color:#fff;
+}
+
+.breadcrumb-home-icon{
+  background-image: url("../images/filter/home.svg");
+  width: 13px;
+  height: 15px;
+  display: block;
+}
+
+.main-h1{
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0px;
 }
 
 .page-footer{
