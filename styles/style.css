@@ -113,10 +113,24 @@ body {
 
 .favorite-button {
   background-color: #82B3D3;
+  padding: 8px 20px;
 }
 
 .favorite-button.is-active {
   background-color: #7DB54F;
+}
+
+.button-small-detail {
+  padding: 8px 26px;
+}
+
+.button-submit {
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  padding: 8px 57px;
+  background-color: transparent;
 }
 
 .hero-h1 {
@@ -216,11 +230,11 @@ body {
   height: 415px;
   box-sizing: border-box;
   padding-top: 96px;
-  color:#fff;
 }
 
 .subscribe-image {
   background-image: url("../images/subscribe/subscribe-background.jpg");
+  color:#fff;
 }
 
 .subscribe h2 {
@@ -260,11 +274,42 @@ body {
   color:#fff;
 }
 
+.breadcrumb {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
 .breadcrumb-home-icon{
   background-image: url("../images/filter/home.svg");
   width: 13px;
   height: 15px;
   display: block;
+}
+
+.filter fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter legend {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.infrastrucure-list {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-types-list {
+  list-style:none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-h1{
@@ -279,6 +324,65 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin: 0px;
+}
+
+.catalog-item-article h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.catalog-item-article-title {
+  text-decoration: none;
+  color:#000;
+}
+
+.rating {
+  width: 140px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-navigation-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-navigation-links a {
+  text-decoration: none;
+  color:#fff;
+  background-color: #82B3D3;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.catalog-navigation-links a.active {
+  background-color: #F2F2F2;
+  color:#000;
+}
+
+.catalog-navigation-links a.dots {
+  background-color: transparent;
+  color:#000;
 }
 
 .page-footer{
