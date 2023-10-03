@@ -131,6 +131,7 @@ body {
 
 .button-submit {
   background-color: #82B3D3;
+  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -382,6 +383,43 @@ body {
   list-style:none;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.breadcrumb li {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb li::after {
+  content: ' ';
+  display: flex;
+  background-image: url("../images/filter/arrow.svg");
+  background-repeat: no-repeat;
+  width:8px;
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.breadcrumb li:last-child:after{
+  display: none;
+}
+
+.home-types-list li, .infrastrucure-list li {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.home-types-list span, .infrastrucure-list span {
+  margin-left: 16px;
+}
+
+.home-types-list input, .infrastrucure-list input {
+  margin: 0;
 }
 
 .breadcrumb-home-icon{
@@ -389,6 +427,12 @@ body {
   width: 13px;
   height: 15px;
   display: block;
+}
+
+.filter form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .filter fieldset {
@@ -414,6 +458,17 @@ body {
   list-style:none;
   margin: 0;
   padding: 0;
+}
+
+.filter .home-types {
+  margin-left: 70px;
+  margin-right: 140px;
+}
+
+.filter-battons{
+  margin-left: auto;
+  margin-top: 56px;
+  width: 203px;
 }
 
 .catalog {
@@ -568,7 +623,7 @@ body {
 }
 
 .filter-range {
-  width: 380px;
+  width: 288px;
   
   color: #ffffff;
   text-transform: uppercase;
