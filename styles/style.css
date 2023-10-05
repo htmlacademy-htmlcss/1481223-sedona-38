@@ -662,18 +662,43 @@ body {
   color:#000;
 }
 
-.page-footer{
+.page-footer {
   padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 70px;
   padding-right: 70px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.page-footer-socials{
+.page-footer-socials {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.page-footer-socials a {
+  display: block;
+  padding: 13px 12px;
+  background-position: center;
+}
+
+.page-footer .phones {
+  width:720px;
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+}
+
+.page-footer-logo-wrapper img{
+  display: block;
 }
 
 .vk-icon {
@@ -706,6 +731,10 @@ body {
   text-decoration: none;
   text-align: center;
   color:#000;
+}
+
+.page-footer-logo-wrapper {
+  align-self: center;
 }
 
 .filter-range {
