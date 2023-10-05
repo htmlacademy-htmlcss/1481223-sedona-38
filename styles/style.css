@@ -265,6 +265,11 @@ body {
   color:#fff;
 }
 
+.advantages-item:first-child, .advantages-item:last-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages-item:nth-child(2) .item-text-box, .advantages-item:nth-child(4) .item-text-box {
   background-color: #83B3D31F;
 }
@@ -277,6 +282,9 @@ body {
   width:400px;
   height: 385px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-text-wrapper {
@@ -332,6 +340,8 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-item-wrapper {
@@ -342,6 +352,9 @@ body {
 .services li {
   width: 400px;
   height: 385px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .services li:first-child {
