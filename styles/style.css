@@ -14,11 +14,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #F2F2F2;
   font-size: 22px;
   line-height: 26px;
   font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -40,16 +49,47 @@ body {
   background-color: #ffffff;
 }
 
-.page-header{
+.page-main {
+  flex-grow: 1;
+}
+
+.page-header {
   box-sizing: border-box;
   padding-left: 70px;
   padding-right: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.logo-wrapper {
+  margin-right: 28px;
+  width: 140px;
+  height: 64px;
+  display: block;
+  position: relative;
+}
+
+.header-navigation{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin-right: 20px;
 }
 
 .header-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
 }
 
 .header-menu-item a{
@@ -58,6 +98,8 @@ body {
   line-height: 24px;
   color:#000;
   text-decoration: none;
+  display: block;
+  padding: 20px 16px;
 }
 
 .header-menu-item.is-active a {
@@ -65,17 +107,28 @@ body {
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
   text-underline-offset: 21px;
-  text-underline-position: under;
 }
 
 .header-right-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-right-menu-list a {
   text-decoration: none;
+  padding: 22px 12px;
+  display: block;
+}
+
+.header-right-menu-list img{
+  display: block;
+}
+
+.favorite-icon {
+  position: relative;
 }
 .favorite-count {
   color: #fff;
@@ -88,6 +141,14 @@ body {
   line-height: 10px;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top:11px;
+  right:4px;
+}
+
+.buttons-wrapper{
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .button{
@@ -230,7 +291,7 @@ body {
 }
 
 .services-item h3 {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 
@@ -291,7 +352,7 @@ body {
   background-color: #83B3D31F;
 }
 
-.advantage-home-icon{
+.advantage-home-icon {
   display: inline-block;
   width: 75px;
   height: 72px;
@@ -306,12 +367,17 @@ body {
   background-image: url("../images/advantages/food.svg");
   background-repeat: no-repeat;
 }
+
 .advantage-present-icon {
   display: inline-block;
   width: 64px;
   height: 76px;
   background-image: url("../images/advantages/present.svg");
   background-repeat: no-repeat;
+}
+
+.advantage-home-icon, .advantage-food-icon, .advantage-present-icon {
+  margin-bottom: 30px;
 }
 
 .search{
@@ -355,6 +421,7 @@ body {
 .subscribe p {
   text-align: center;
   margin-bottom: 54px;
+  margin-top: 0;
 }
 
 .subscribe form{
@@ -460,13 +527,19 @@ body {
   padding: 0;
 }
 
+.filter .infrastrucure {
+  margin-right: 70px;
+}
+
 .filter .home-types {
-  margin-left: 70px;
   margin-right: 140px;
 }
 
-.filter-battons{
-  margin-left: auto;
+.filter .price-range {
+  margin-right: auto;
+}
+
+.filter-battons {
   margin-top: 56px;
   width: 203px;
 }
