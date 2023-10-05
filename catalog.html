@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header" data-test="header">
-      <a href="index.html"><img src="images/header/logo.svg" width="140" height="70" class="header-logo" alt="Седона логотип"></a>
+      <a href="index.html" class="logo-wrapper"><img src="images/header/logo.svg" width="140" height="70" class="header-logo" alt="Седона логотип"></a>
       <nav class="header-navigation">
         <ul class="header-menu-list">
           <li class="header-menu-item"><a href="index.html">Главная</a></li>
@@ -51,8 +51,8 @@
           <fieldset class='price-range'>
             <legend>Стоимость, ₽:</legend>
             <div class="filter-range">
-              <label><input type="text" class="price-from" value="0">от</label>
-              <label><input type="text" class="price-to"  value="9000">до</label>  
+              <label class="price-from"><input type="text" value="0"><span>от</span></label>
+              <label class="price-to"><input type="text" value="9000"><span>до</span></label>  
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
