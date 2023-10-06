@@ -457,6 +457,7 @@ body {
   background-image: url("../images/filter/filter-background.jpg");
   background-repeat: no-repeat;
   color:#fff;
+  background-color: #000;
 }
 
 .breadcrumb {
@@ -570,8 +571,11 @@ body {
 }
 
 .catalog-list .catalog-item-article {
-  padding: 19px;
+  padding: 20px;
   border: 1px solid #E6E6E6;
+  width: 340px;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .main-h1{
