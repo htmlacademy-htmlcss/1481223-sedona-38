@@ -92,7 +92,7 @@ body {
   margin-right: auto;
 }
 
-.header-menu-item a{
+.header-menu-item .header-menu-item-link{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -102,7 +102,7 @@ body {
   padding: 20px 16px;
 }
 
-.header-menu-item.is-active a {
+.header-menu-item.is-active .header-menu-item-link {
   text-decoration:underline;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
@@ -117,13 +117,13 @@ body {
   flex-wrap: wrap;
 }
 
-.header-right-menu-list a {
+.header-right-menu-list .search-icon, .header-right-menu-list .favorite-icon {
   text-decoration: none;
   padding: 22px 12px;
   display: block;
 }
 
-.header-right-menu-list img{
+.header-right-menu-list .icon-image{
   display: block;
 }
 
@@ -215,13 +215,13 @@ body {
   padding-top: 51px;
 }
 
-.hero img{
+.hero .hero-image{
   display: block;
   width: 458px;
   margin: 0 auto;
 }
 
-.advantages-section-text h2, .service-section-text h2 {
+.advantages-section-text .advantages-section-text-title, .service-section-text .service-section-text-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -230,7 +230,7 @@ body {
   margin:0px;
 }
 
-.advantages-section-text h2 {
+.advantages-section-text .advantages-section-text-title {
   margin-bottom: 25px;
 }
 
@@ -240,7 +240,7 @@ body {
   margin-bottom: 21px;
 }
 
-.service-section-text h2{
+.service-section-text .service-section-text-title{
   margin-bottom: 20px;
 }
 
@@ -249,7 +249,7 @@ body {
   padding-bottom: 64px;
 }
 
-.advantages-section-text p, .service-section-text p {
+.advantages-section-text .advantages-section-text-description, .service-section-text .service-section-text-description {
   text-align: center;
   margin:0px;
 }
@@ -291,24 +291,24 @@ body {
   width:230px;
 }
 
-.advantages-text-wrapper h3, .services-item h3 {
+.advantages-text-wrapper .advantages-text-title, .services-item .services-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.services-item h3 {
+.services-item .services-item-title {
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
-.advantages-text-wrapper h3 {
+.advantages-text-wrapper .advantages-text-title {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-.advantages-text-wrapper p {
+.advantages-text-wrapper .advantages-text-description {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -331,7 +331,7 @@ body {
   margin: 0 auto 30px;
 }
 
-.advantages-text-wrapper p, .services-item p {
+.advantages-text-wrapper .advantages-text-description, .services-item .services-item-description {
   font-size: 18px;
   line-height: 21px;
 }
@@ -365,32 +365,37 @@ body {
   background-color: #83B3D31F;
 }
 
-.advantage-home-icon {
-  display: inline-block;
+.advantage-home-icon::before {
+  content: " ";
+  display: block;
   width: 75px;
   height: 72px;
   background-image: url("../images/advantages/home.svg");
   background-repeat: no-repeat;
 }
 
-.advantage-food-icon {
-  display: inline-block;
+.advantage-food-icon::before {
+  content: " ";
+  display: block;
   width: 74px;
   height: 70px;
   background-image: url("../images/advantages/food.svg");
   background-repeat: no-repeat;
 }
 
-.advantage-present-icon {
-  display: inline-block;
+.advantage-present-icon::before {
+  content: " ";
+  display: block;
   width: 64px;
   height: 76px;
   background-image: url("../images/advantages/present.svg");
   background-repeat: no-repeat;
 }
 
-.advantage-home-icon, .advantage-food-icon, .advantage-present-icon {
+.advantage-home-icon::before, .advantage-food-icon::before, .advantage-present-icon::before {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search{
@@ -398,13 +403,13 @@ body {
   text-align: center;
 }
 
-.search h2{
+.search .search-title{
   margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.search p {
+.search .search-description {
   margin: 0;
   margin-bottom: 54px;
 }
@@ -421,7 +426,7 @@ body {
   background-color: #000;
 }
 
-.subscribe h2 {
+.subscribe .subscribe-title {
   margin-top: 0px;
   margin-bottom: 20px;
   text-align: center;
@@ -431,7 +436,7 @@ body {
   line-height: 36px;
 }
 
-.subscribe p {
+.subscribe .subscribe-description {
   text-align: center;
   margin-bottom: 54px;
   margin-top: 0;
@@ -456,6 +461,7 @@ body {
   padding: 35px 70px;
   background-image: url("../images/filter/filter-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   color:#fff;
   background-color: #000;
 }
@@ -467,7 +473,7 @@ body {
   display: flex;
 }
 
-.breadcrumb li {
+.breadcrumb .crumb {
   align-self: center;
   display: flex;
   justify-content: center;
@@ -510,7 +516,7 @@ body {
   display: block;
 }
 
-.filter form {
+.filter .filter-form {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -522,7 +528,7 @@ body {
   margin: 0;
 }
 
-.filter legend {
+.filter .filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -585,14 +591,14 @@ body {
   line-height: 78px;
 }
 
-.catalog h2 {
+.catalog .catalog-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   margin: 0px;
 }
 
-.catalog-item-article h3 {
+.catalog-item-article .catalog-item-article-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -600,7 +606,7 @@ body {
   margin-bottom: 16px;
 }
 
-.catalog-item-article-title {
+.catalog-item-article-title-link {
   text-decoration: none;
   color:#000;
 }
@@ -663,7 +669,7 @@ body {
   list-style: none;
 }
 
-.catalog-navigation-links a {
+.catalog-navigation-links .nav-link {
   text-decoration: none;
   color:#fff;
   background-color: #82B3D3;
@@ -678,12 +684,12 @@ body {
   line-height: 36px;
 }
 
-.catalog-navigation-links a.active {
+.catalog-navigation-links .nav-link.active {
   background-color: #F2F2F2;
   color:#000;
 }
 
-.catalog-navigation-links a.dots {
+.catalog-navigation-links .nav-link.dots {
   background-color: transparent;
   color:#000;
 }
@@ -762,7 +768,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.phones a {
+.phones .phone {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
