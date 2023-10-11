@@ -217,7 +217,6 @@ body {
 }
 
 .button-reset {
-  padding: 8px 57px;
   background-color: transparent;
   padding: 8px 10px;
   width: 100%;
@@ -490,7 +489,7 @@ body {
 }
 
 .filter {
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
   background-image: url("../images/filter/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -510,6 +509,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 21px;
+  font-size: 16px;
 }
 
 .breadcrumb li::after {
@@ -531,6 +532,11 @@ body {
 .home-types-list li, .infrastrucure-list li {
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.home-types-list li:last-child, .infrastrucure-list li:last-child {
+  margin-bottom: 0;
 }
 
 .home-types-list span, .infrastrucure-list span {
@@ -764,14 +770,14 @@ body {
   flex-wrap: wrap;
   padding-top: 5px;
   padding-bottom: 5px;
-  box-sizing: border-box;
-  height: 50px;
 }
 
 .page-footer-socials a {
   display: block;
-  padding: 13px 12px;
+  width: 47px;
+  height: 40px;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-footer .phones {
@@ -787,26 +793,15 @@ body {
 
 .vk-icon {
   display: block;
-  width: 24px;
-  height: 14px;
   background-image: url("../images/footer/vk.svg");
-  background-repeat: no-repeat;
 }
 
 .tg-icon {
-  display: block;
-  width: 18px;
-  height: 16px;
   background-image: url("../images/footer/telegram.svg");
-  background-repeat: no-repeat;
 }
 
 .youtube-icon {
-  display: block;
-  width: 22px;
-  height: 17px;
   background-image: url("../images/footer/youtube.svg");
-  background-repeat: no-repeat;
 }
 
 .phones .phone {
@@ -917,7 +912,7 @@ body {
 .range-controls {
   position: relative;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
   
 .range-controls .scale {
