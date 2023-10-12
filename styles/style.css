@@ -312,11 +312,13 @@ body {
 
 .item-text-box{
   width:400px;
-  height: 385px;
+  min-height: 385px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  padding: 75px 85px;
 }
 
 .advantages-text-wrapper {
@@ -369,6 +371,11 @@ body {
   line-height: 21px;
 }
 
+.services-item .services-item-description {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .services {
   padding: 0;
   margin: 0;
@@ -384,10 +391,12 @@ body {
 
 .services li {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 75px 85px;
+  box-sizing: border-box;
 }
 
 .services li:nth-child(odd) {
@@ -455,6 +464,7 @@ body {
   background-image: url("../images/subscribe/subscribe-background.jpg");
   color:#fff;
   background-color: #beceee;
+  background-size: cover;
 }
 
 .subscribe .subscribe-title {
