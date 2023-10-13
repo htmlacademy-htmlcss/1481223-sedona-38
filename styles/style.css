@@ -318,11 +318,7 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 75px 85px;
-}
-
-.advantages-text-wrapper {
-  width:230px;
+  padding: 75px 84px;
 }
 
 .advantages-text-wrapper .advantages-text-title, .services-item .services-item-title {
@@ -346,6 +342,7 @@ body {
 .advantages-text-wrapper .advantages-text-description {
   margin-bottom: 0;
   margin-top: 0;
+  width: 100%;
 }
 
 .advantages-item p::before {
