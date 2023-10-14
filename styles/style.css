@@ -14,6 +14,14 @@
   font-display: swap;
 }
 
+.custom-break::after {
+	content: "\A";
+}
+
+.custom-break::after {
+	white-space: pre;
+}
+
 html {
   height: 100%;
 }
@@ -150,11 +158,13 @@ body {
 .buttons-wrapper{
   padding-top: 14px;
   padding-bottom: 14px;
+  width: 160px;
 }
 
 .button{
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color:#fff;
   font-weight: 700;
   font-size: 16px;
@@ -165,6 +175,12 @@ body {
   display: inline-block;
   border: none;
   font-family: inherit;
+}
+
+.header-button {
+  padding: 8px 10px;
+  width:100%;
+  box-sizing: border-box;
 }
 
 .subscribe-button{
@@ -195,11 +211,16 @@ body {
 .button-submit {
   background-color: #82B3D3;
   margin-bottom: 32px;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .button-reset {
-  padding: 8px 57px;
   background-color: transparent;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-title {
@@ -240,6 +261,8 @@ body {
 .advantages-section-text {
   padding-top: 69px;
   padding-bottom: 69px;
+  padding-left: 270px;
+  padding-right: 270px;
   margin-bottom: 21px;
 }
 
@@ -250,6 +273,8 @@ body {
 .service-section-text {
   padding-top: 64px;
   padding-bottom: 64px;
+  padding-left: 270px;
+  padding-right: 270px;
 }
 
 .advantages-section-text .advantages-section-text-description, .service-section-text .service-section-text-description {
@@ -287,15 +312,13 @@ body {
 
 .item-text-box{
   width:400px;
-  height: 385px;
+  min-height: 385px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.advantages-text-wrapper {
-  width:230px;
+  box-sizing: border-box;
+  padding: 75px 84px;
 }
 
 .advantages-text-wrapper .advantages-text-title, .services-item .services-item-title {
@@ -319,6 +342,7 @@ body {
 .advantages-text-wrapper .advantages-text-description {
   margin-bottom: 0;
   margin-top: 0;
+  width: 100%;
 }
 
 .advantages-item p::before {
@@ -344,6 +368,11 @@ body {
   line-height: 21px;
 }
 
+.services-item .services-item-description {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .services {
   padding: 0;
   margin: 0;
@@ -359,17 +388,15 @@ body {
 
 .services li {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 75px 85px;
+  box-sizing: border-box;
 }
 
-.services li:first-child {
-  background-color: #83B3D31F;
-}
-
-.services li:last-child {
+.services li:nth-child(odd) {
   background-color: #83B3D31F;
 }
 
@@ -407,7 +434,7 @@ body {
 }
 
 .search{
-  padding: 96px 0;
+  padding: 96px 270px;
   text-align: center;
 }
 
@@ -426,12 +453,15 @@ body {
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
+  padding-left: 250px;
+  padding-right: 250px;
 }
 
 .subscribe-image {
   background-image: url("../images/subscribe/subscribe-background.jpg");
   color:#fff;
   background-color: #beceee;
+  background-size: cover;
 }
 
 .subscribe .subscribe-title {
@@ -466,7 +496,7 @@ body {
 }
 
 .filter {
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
   background-image: url("../images/filter/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,6 +516,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 21px;
+  font-size: 16px;
 }
 
 .breadcrumb li::after {
@@ -507,6 +539,11 @@ body {
 .home-types-list li, .infrastrucure-list li {
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.home-types-list li:last-child, .infrastrucure-list li:last-child {
+  margin-bottom: 0;
 }
 
 .home-types-list span, .infrastrucure-list span {
@@ -532,6 +569,10 @@ body {
 
 .input-checkbox, .input-radio, .sort {
   font-family: inherit;
+}
+
+.sort {
+  margin-right: auto;
 }
 
 .filter fieldset {
@@ -561,10 +602,12 @@ body {
 
 .filter .infrastrucure {
   margin-right: 70px;
+  width: 150px;
 }
 
 .filter .home-types {
   margin-right: 140px;
+  width: 150px;
 }
 
 .filter .price-range {
@@ -573,7 +616,7 @@ body {
 
 .filter-battons {
   margin-top: 56px;
-  width: 203px;
+  width: 191px;
 }
 
 .catalog {
@@ -588,8 +631,29 @@ body {
   margin-bottom: 40px;
 }
 
+.catalog-controls-buttons {
+  display: flex;
+  column-gap: 8px;
+}
+
+.catalog-controls-button { 
+  border:2px solid #E5E5E5;
+  background-color: #fff;
+  border-radius: 4px;
+  min-width: 48px;
+  min-height: 48px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+}
+.catalog-controls-button:hover {
+  border:2px solid #000;
+}
+
 .catalog-list .catalog-item-article {
-  padding: 20px;
+  padding: 19px;
   border: 1px solid #E6E6E6;
   width: 340px;
   box-sizing: border-box;
@@ -609,6 +673,9 @@ body {
   line-height: 36px;
   margin: 0px;
   color: #000;
+  align-self: center;
+  margin-right: 200px;
+  text-transform: uppercase;
 }
 
 .catalog-item-article .catalog-item-article-title {
@@ -688,14 +755,16 @@ body {
   color:#fff;
   background-color: #82B3D3;
   display: flex;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .catalog-navigation-links .nav-link.active {
@@ -715,8 +784,7 @@ body {
 
 .catalog-navigation-links {
   display: flex;
-  width: 400px;
-  justify-content: space-between;
+  column-gap: 8px;
 }
 
 .page-footer {
@@ -737,14 +805,14 @@ body {
   flex-wrap: wrap;
   padding-top: 5px;
   padding-bottom: 5px;
-  box-sizing: border-box;
-  height: 50px;
 }
 
 .page-footer-socials a {
   display: block;
-  padding: 13px 12px;
+  width: 47px;
+  height: 40px;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-footer .phones {
@@ -760,26 +828,15 @@ body {
 
 .vk-icon {
   display: block;
-  width: 24px;
-  height: 14px;
   background-image: url("../images/footer/vk.svg");
-  background-repeat: no-repeat;
 }
 
 .tg-icon {
-  display: block;
-  width: 18px;
-  height: 16px;
   background-image: url("../images/footer/telegram.svg");
-  background-repeat: no-repeat;
 }
 
 .youtube-icon {
-  display: block;
-  width: 22px;
-  height: 17px;
   background-image: url("../images/footer/youtube.svg");
-  background-repeat: no-repeat;
 }
 
 .phones .phone {
@@ -890,7 +947,7 @@ body {
 .range-controls {
   position: relative;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
   
 .range-controls .scale {
