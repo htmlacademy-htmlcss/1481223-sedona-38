@@ -675,6 +675,7 @@ body {
   color: #000;
   align-self: center;
   margin-right: 200px;
+  text-transform: uppercase;
 }
 
 .catalog-item-article .catalog-item-article-title {
