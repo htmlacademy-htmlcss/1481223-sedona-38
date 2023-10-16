@@ -282,10 +282,17 @@ body {
   margin:0px;
 }
 
-.advantages-list{
+.advantages-list {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns:repeat(3, 400px);
+}
+
+
+.advantages-item:first-child, .advantages-item:last-child {
+  grid-column: span 3;
 }
 
 .advantages-item:first-child .item-text-box, .advantages-item:last-child .item-text-box {
@@ -708,10 +715,16 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns:repeat(3, 340px);
   gap: 20px;
   margin-bottom: 40px;
+}
+
+.catalog-item-buttons-wrapper {
+  display: grid;
+  gap:20px;
+  grid-template-columns:repeat(2, 140px);
 }
 
 .catalog-list img {
