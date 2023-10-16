@@ -244,7 +244,12 @@ body {
   margin: 0 auto;
 }
 
-.advantages-section-text .advantages-section-text-title, .service-section-text .service-section-text-title {
+.head-text {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.head-text .text-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -252,34 +257,32 @@ body {
   text-transform: uppercase;
   margin:0px;
   color: #000;
+  margin-bottom: 20px;
 }
 
-.advantages-section-text .advantages-section-text-title {
+.head-text .text-description {
+  text-align: center;
+  margin:0px;
+}
+
+.search .text-description, .subscribe .text-description {
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.advantages-section-text .text-title {
   margin-bottom: 25px;
 }
 
 .advantages-section-text {
   padding-top: 69px;
   padding-bottom: 69px;
-  padding-left: 270px;
-  padding-right: 270px;
   margin-bottom: 21px;
-}
-
-.service-section-text .service-section-text-title{
-  margin-bottom: 20px;
 }
 
 .service-section-text {
   padding-top: 64px;
   padding-bottom: 64px;
-  padding-left: 270px;
-  padding-right: 270px;
-}
-
-.advantages-section-text .advantages-section-text-description, .service-section-text .service-section-text-description {
-  text-align: center;
-  margin:0px;
 }
 
 .advantages-list {
@@ -440,30 +443,15 @@ body {
   margin-right: auto;
 }
 
-.search{
-  padding: 96px 270px;
+.search {
+  padding-top: 96px;
+  padding-bottom: 96px;
   text-align: center;
-}
-
-.search .search-title{
-  margin: 0;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.search .search-description {
-  margin: 0;
-  margin-bottom: 54px;
 }
 
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
-  padding-left: 250px;
-  padding-right: 250px;
 }
 
 .subscribe-image {
@@ -473,20 +461,8 @@ body {
   background-size: cover;
 }
 
-.subscribe .subscribe-title {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.subscribe .subscribe-description {
-  text-align: center;
-  margin-bottom: 54px;
-  margin-top: 0;
+.subscribe-image .text-title {
+  color:#fff;
 }
 
 .subscribe form{
