@@ -197,15 +197,16 @@ body {
 
 .favorite-button {
   background-color: #82B3D3;
-  padding: 8px 20px;
 }
 
 .favorite-button.is-active {
   background-color: #7DB54F;
 }
 
-.button-small-detail {
-  padding: 8px 26px;
+.button-small {
+  padding: 8px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .button-submit {
@@ -233,9 +234,8 @@ body {
   background-position: bottom, center;
   background-size: contain, cover;
   background-color: #beceee;
-  height: 485px;
-  box-sizing: border-box;
   padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .hero .hero-image{
@@ -244,7 +244,12 @@ body {
   margin: 0 auto;
 }
 
-.advantages-section-text .advantages-section-text-title, .service-section-text .service-section-text-title {
+.head-text {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.head-text .text-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -252,62 +257,75 @@ body {
   text-transform: uppercase;
   margin:0px;
   color: #000;
+  margin-bottom: 20px;
 }
 
-.advantages-section-text .advantages-section-text-title {
+.head-text .text-description {
+  text-align: center;
+  margin:0px;
+}
+
+.search .text-description, .subscribe .text-description {
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.advantages-section-text .text-title {
   margin-bottom: 25px;
 }
 
 .advantages-section-text {
   padding-top: 69px;
   padding-bottom: 69px;
-  padding-left: 270px;
-  padding-right: 270px;
   margin-bottom: 21px;
-}
-
-.service-section-text .service-section-text-title{
-  margin-bottom: 20px;
 }
 
 .service-section-text {
   padding-top: 64px;
   padding-bottom: 64px;
-  padding-left: 270px;
-  padding-right: 270px;
 }
 
-.advantages-section-text .advantages-section-text-description, .service-section-text .service-section-text-description {
-  text-align: center;
-  margin:0px;
-}
-
-.advantages-list{
+.advantages-list {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns:repeat(3, 400px);
 }
 
-.advantages-item:first-child .item-text-box, .advantages-item:last-child .item-text-box {
+.advantage-image {
+  display: block;
+  object-fit: contain;
+}
+
+.reversed-item .advantage-image-wrapper {
+  order:-1;
+}
+
+.advantages-item.wide-item, .advantages-item.wide-item {
+  grid-column: 1 / -1;
+}
+
+.advantages-item:nth-child(even) .item-text-box {
+  background-color: #83B3D31F;
+}
+
+.advantages-item:nth-child(odd) .item-text-box {
+  background-color: #83B3D333;
+}
+
+.advantages-item.wide-item .item-text-box {
   background-color: #82B3D3;
   color:#fff;
 }
 
-.advantages-item:first-child .advantages-text-title, .advantages-item:last-child .advantages-text-title{
+.advantages-item.wide-item .advantages-text-title {
   color:#fff;
 }
 
-.advantages-item:first-child, .advantages-item:last-child {
+.advantages-item.wide-item {
   display: flex;
   flex-wrap: wrap;
-}
-
-.advantages-item:nth-child(2) .item-text-box, .advantages-item:nth-child(4) .item-text-box {
-  background-color: #83B3D31F;
-}
-
-.advantages-item:nth-child(3) .item-text-box {
-  background-color: #83B3D333;
 }
 
 .item-text-box{
@@ -433,28 +451,15 @@ body {
   margin-right: auto;
 }
 
-.search{
-  padding: 96px 270px;
+.search {
+  padding-top: 96px;
+  padding-bottom: 96px;
   text-align: center;
-}
-
-.search .search-title{
-  margin: 0;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #000;
-}
-
-.search .search-description {
-  margin: 0;
-  margin-bottom: 54px;
 }
 
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
-  padding-left: 250px;
-  padding-right: 250px;
 }
 
 .subscribe-image {
@@ -464,20 +469,8 @@ body {
   background-size: cover;
 }
 
-.subscribe .subscribe-title {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.subscribe .subscribe-description {
-  text-align: center;
-  margin-bottom: 54px;
-  margin-top: 0;
+.subscribe-image .text-title {
+  color:#fff;
 }
 
 .subscribe form{
@@ -655,9 +648,11 @@ body {
 .catalog-list .catalog-item-article {
   padding: 19px;
   border: 1px solid #E6E6E6;
-  width: 340px;
   box-sizing: border-box;
   border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-title{
@@ -708,10 +703,17 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns:repeat(3, 340px);
   gap: 20px;
   margin-bottom: 40px;
+}
+
+.catalog-item-buttons-wrapper {
+  display: grid;
+  gap:20px;
+  grid-template-columns:repeat(2, 140px);
+  margin-top: auto;
 }
 
 .catalog-list img {
@@ -738,7 +740,7 @@ body {
 .catalog-item-price{
   font-size: 18px;
   line-height: 21px;
-  margin-top: 16px;
+  margin-top: 0px;
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
@@ -784,7 +786,8 @@ body {
 
 .catalog-navigation-links {
   display: flex;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .page-footer {
@@ -816,7 +819,7 @@ body {
 }
 
 .page-footer .phones {
-  width:720px;
+  max-width:720px;
   margin: 0 auto;
   text-align: center;
   align-self: center;
