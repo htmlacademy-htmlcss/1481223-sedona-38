@@ -197,15 +197,16 @@ body {
 
 .favorite-button {
   background-color: #82B3D3;
-  padding: 8px 20px;
 }
 
 .favorite-button.is-active {
   background-color: #7DB54F;
 }
 
-.button-small-detail {
-  padding: 8px 26px;
+.button-small {
+  padding: 8px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .button-submit {
@@ -233,9 +234,8 @@ body {
   background-position: bottom, center;
   background-size: contain, cover;
   background-color: #beceee;
-  height: 485px;
-  box-sizing: border-box;
   padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .hero .hero-image{
@@ -293,31 +293,39 @@ body {
   grid-template-columns:repeat(3, 400px);
 }
 
-
-.advantages-item:first-child, .advantages-item:last-child {
-  grid-column: span 3;
+.advantage-image {
+  display: block;
+  object-fit: contain;
 }
 
-.advantages-item:first-child .item-text-box, .advantages-item:last-child .item-text-box {
+.reversed-item .advantage-image-wrapper {
+  order:-1;
+}
+
+.advantages-item.wide-item, .advantages-item.wide-item {
+  grid-column: 1 / -1;
+}
+
+.advantages-item:nth-child(even) .item-text-box {
+  background-color: #83B3D31F;
+}
+
+.advantages-item:nth-child(odd) .item-text-box {
+  background-color: #83B3D333;
+}
+
+.advantages-item.wide-item .item-text-box {
   background-color: #82B3D3;
   color:#fff;
 }
 
-.advantages-item:first-child .advantages-text-title, .advantages-item:last-child .advantages-text-title{
+.advantages-item.wide-item .advantages-text-title {
   color:#fff;
 }
 
-.advantages-item:first-child, .advantages-item:last-child {
+.advantages-item.wide-item {
   display: flex;
   flex-wrap: wrap;
-}
-
-.advantages-item:nth-child(2) .item-text-box, .advantages-item:nth-child(4) .item-text-box {
-  background-color: #83B3D31F;
-}
-
-.advantages-item:nth-child(3) .item-text-box {
-  background-color: #83B3D333;
 }
 
 .item-text-box{
@@ -640,9 +648,11 @@ body {
 .catalog-list .catalog-item-article {
   padding: 19px;
   border: 1px solid #E6E6E6;
-  width: 340px;
   box-sizing: border-box;
   border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-title{
@@ -703,6 +713,7 @@ body {
   display: grid;
   gap:20px;
   grid-template-columns:repeat(2, 140px);
+  margin-top: auto;
 }
 
 .catalog-list img {
@@ -729,7 +740,7 @@ body {
 .catalog-item-price{
   font-size: 18px;
   line-height: 21px;
-  margin-top: 16px;
+  margin-top: 0px;
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
@@ -775,7 +786,8 @@ body {
 
 .catalog-navigation-links {
   display: flex;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .page-footer {
