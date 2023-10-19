@@ -175,6 +175,7 @@ body {
   display: inline-block;
   border: none;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .header-button {
@@ -564,7 +565,7 @@ body {
   font-family: inherit;
 }
 
-.sort {
+.sort_wrapper {
   margin-right: auto;
 }
 
@@ -640,8 +641,9 @@ body {
   box-sizing: border-box;
   padding: 10px;
   display: flex;
+  cursor: pointer;
 }
-.catalog-controls-button:hover {
+.catalog-controls-button:hover, .catalog-controls-button.is-active {
   border:2px solid #000;
 }
 
@@ -806,11 +808,12 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.page-footer-socials a {
+.page-footer-socials .social-link {
   display: block;
   width: 47px;
   height: 40px;
@@ -823,6 +826,8 @@ body {
   margin: 0 auto;
   text-align: center;
   align-self: center;
+  display:flex;
+  flex-direction: column;
 }
 
 .page-footer-logo-wrapper img{
@@ -832,14 +837,17 @@ body {
 .vk-icon {
   display: block;
   background-image: url("../images/footer/vk.svg");
+  background-size: 24px 14px;
 }
 
 .tg-icon {
   background-image: url("../images/footer/telegram.svg");
+  background-size: 18px 16px;
 }
 
 .youtube-icon {
   background-image: url("../images/footer/youtube.svg");
+  background-size: 22px 17px;
 }
 
 .phones .phone {

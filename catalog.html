@@ -71,13 +71,15 @@
       <section class="catalog" data-test="catalog">
         <div class="catalog-controls">
           <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-          <select name="sort" class="sort" aria-label="Сортировка">
-            <option value="Сначала дешевые">Сначала дешевые</option>
-            <option value="Сначала дорогие">Сначала дорогие</option>
-          </select>
+          <div class="sort_wrapper">
+            <select name="sort" class="sort" aria-label="Сортировка">
+              <option value="Сначала дешевые">Сначала дешевые</option>
+              <option value="Сначала дорогие">Сначала дорогие</option>
+            </select>
+          </div>
           <div class="catalog-controls-buttons">
-            <button class="catalog-controls-button">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="catalog-controls-button is-active">
+              <svg aria-hidden="true" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_91128_168)">
                 <path d="M4 0H0V6H4V0Z" fill="black"/>
                 <path d="M16 0H12V6H16V0Z" fill="black"/>
@@ -94,13 +96,13 @@
                 </svg>
             </button>
             <button class="catalog-controls-button">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0V14H16V12Z" fill="black"/>
                 <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
                 </svg>
             </button>
             <button class="catalog-controls-button">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_91128_294)">
                 <path d="M2 0H0V2H2V0Z" fill="black"/>
                 <path d="M16 0H4V2H16V0Z" fill="black"/>
@@ -212,9 +214,9 @@
     </main>
     <footer class="page-footer" data-test="footer">
       <ul class="page-footer-socials">
-        <li><a class="vk-icon" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в контакт</span></a></li>
-        <li><a class="tg-icon" href="https://t.me/htmlacademy"><span class="visually-hidden">Перейти в телеграм</span></a></li>
-        <li><a class="youtube-icon" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Перейти в ютуб</span></a></li>
+        <li><a class="social-link vk-icon" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в контакт</span></a></li>
+        <li><a class="social-link tg-icon" href="https://t.me/htmlacademy"><span class="visually-hidden">Перейти в телеграм</span></a></li>
+        <li><a class="social-link youtube-icon" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Перейти в ютуб</span></a></li>
       </ul>
       <div class="phones"><a class="phone" href="tel:78128121212">+7 (812) 812-12-12</a></div>
       <div class="page-footer-logo-wrapper"><a href="https://htmlacademy.ru/"><img class="footer-logo" width="115" height="33" src="images/footer/logo-footer.svg" alt="Лого академии"></a></div>
