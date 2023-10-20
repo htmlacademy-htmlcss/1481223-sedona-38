@@ -172,10 +172,12 @@ body {
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 50px;
-  display: inline-block;
   border: none;
   font-family: inherit;
   cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
