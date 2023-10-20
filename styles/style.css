@@ -611,10 +611,6 @@ body {
   margin-bottom: 0;
 }
 
-.home-types-list span, .infrastrucure-list span {
-  margin-left: 16px;
-}
-
 .home-types-list input, .infrastrucure-list input {
   margin: 0;
 }
@@ -636,6 +632,70 @@ body {
   font-family: inherit;
 }
 
+.input-checkbox, .input-radio {
+  display: none;
+}
+
+.input-checkbox + span::before, .input-checkbox:checked + span::before {
+  content: ' ';
+  display:inline-block;
+  height: 20px;
+  width:20px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 16px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.input-checkbox:checked + span::before {
+  background-image: url("../images/filter/check.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.input-checkbox:hover + span::before {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.input-checkbox:focus + span::before {
+  border:3px solid #83B3D3;
+}
+
+.input-checkbox:active + span::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.input-radio + span::before, .input-radio:checked span::before {
+  content: ' ';
+  display:inline-block;
+  height: 20px;
+  width:20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 16px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.input-radio:checked + span::before {
+  background-image: url("../images/filter/radio.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.input-radio:hover + span::before {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.input-radio:focus + span::before {
+  border:3px solid #83B3D3;
+}
+
+.input-radio:active + span::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .sort {
   border: 2px solid #E5E5E5;
   height: 49px;
@@ -645,6 +705,19 @@ body {
   background-color: #fff;
   font-size: 18px;
   line-height: 21px;
+}
+
+.sort:hover {
+  border: 2px solid #68A2CA;
+}
+
+.sort:focus {
+  outline: none;
+}
+
+.sort:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color:rgba(0, 0, 0, 0.3);
 }
 
 .sort_wrapper {
