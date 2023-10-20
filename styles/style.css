@@ -1002,11 +1002,20 @@ body {
 }
 
 .page-footer-socials .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 40px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.page-footer-socials .social-link:hover path, .page-footer-socials .social-link:focus path{
+  fill: #68A2CA;
+}
+.page-footer-socials .social-link:active path{
+  fill:rgba(104, 162, 202, 0.3);
 }
 
 .page-footer .phones {
@@ -1058,16 +1067,16 @@ body {
   color:rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo:hover {
-  stroke: #756157;
+.footer-logo:hover path{
+  fill: #756157;
 }
 
-.footer-logo:focus {
-  stroke: #756157;
+.footer-logo:focus path{
+  fill: #756157;
 }
 
-.footer-logo:active {
-  stroke: rgba(117, 97, 87, 0.3);
+.footer-logo:active path{
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .page-footer-logo-wrapper {
