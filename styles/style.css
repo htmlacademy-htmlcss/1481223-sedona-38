@@ -573,6 +573,18 @@ body {
   font-size: 16px;
 }
 
+.breadcrumb .crumb:hover {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb .crumb:focus {
+  color:#fff;
+}
+
+.breadcrumb .crumb:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumb li::after {
   content: ' ';
   display: flex;
