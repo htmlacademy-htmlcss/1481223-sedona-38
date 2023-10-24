@@ -1129,12 +1129,13 @@ body {
   display: inline-flex;
   background-color: #fff;
   align-items: center;
-  padding: 12px 20px;
+  padding: 12px 15px;
   border: none;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: 700;
   border: 3px solid transparent;
+  font-size: inherit;
 }
 
 .price-from-label, .price-to-label{
