@@ -99,6 +99,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
+  max-width: 620px;
 }
 
 .header-menu-item .header-menu-item-link{
