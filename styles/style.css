@@ -1041,10 +1041,10 @@ body {
   color:#83B3D3;
 }
 
-.page-footer-socials .social-link:hover svg, .page-footer-socials .social-link:focus svg{
+.social-link:hover svg, .social-link:focus svg{
   color: #68A2CA;
 }
-.page-footer-socials .social-link:active svg{
+.social-link:active svg{
   color:rgba(104, 162, 202, 0.3);
 }
 
@@ -1059,22 +1059,6 @@ body {
 
 .page-footer-logo-wrapper img{
   display: block;
-}
-
-.vk-icon {
-  display: block;
-  background-image: url("../images/footer/vk.svg");
-  background-size: 24px 14px;
-}
-
-.tg-icon {
-  background-image: url("../images/footer/telegram.svg");
-  background-size: 18px 16px;
-}
-
-.youtube-icon {
-  background-image: url("../images/footer/youtube.svg");
-  background-size: 22px 17px;
 }
 
 .phones .phone {
@@ -1115,6 +1099,10 @@ body {
 
 .page-footer-logo-wrapper {
   align-self: center;
+}
+
+.footer-logo-link {
+  display: block;
 }
 
 .filter-range {
@@ -1243,17 +1231,13 @@ body {
   position: absolute;
   top: -9px;
   
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   
   background: #fff;
-  border: 8px solid #ffffff;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
-}
-  
-.range-toggle:hover {
-  background: #1c4f80;
 }
   
 .range-toggle-min {
