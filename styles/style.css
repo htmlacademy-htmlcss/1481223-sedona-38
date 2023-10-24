@@ -933,15 +933,6 @@ body {
   background-image: url("../images/hotels/stars-4.svg");
 }
 
-/*.catalog-item-price{
-  font-size: 18px;
-  line-height: 21px;
-  margin-top: 0px;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-}*/
-
 .catalog-item-buttons-wrapper .hotel-type, .catalog-item-buttons-wrapper .price {
   font-size: 18px;
   line-height: 21px;
