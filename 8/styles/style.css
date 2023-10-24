@@ -359,6 +359,7 @@ body {
 .advantage-image {
   display: block;
   object-fit: contain;
+  height: 100%;
 }
 
 .reversed-item .advantage-image-wrapper {
@@ -933,15 +934,6 @@ body {
   background-image: url("../images/hotels/stars-4.svg");
 }
 
-/*.catalog-item-price{
-  font-size: 18px;
-  line-height: 21px;
-  margin-top: 0px;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-}*/
-
 .catalog-item-buttons-wrapper .hotel-type, .catalog-item-buttons-wrapper .price {
   font-size: 18px;
   line-height: 21px;
@@ -1050,10 +1042,10 @@ body {
   color:#83B3D3;
 }
 
-.page-footer-socials .social-link:hover svg, .page-footer-socials .social-link:focus svg{
+.social-link:hover svg, .social-link:focus svg{
   color: #68A2CA;
 }
-.page-footer-socials .social-link:active svg{
+.social-link:active svg{
   color:rgba(104, 162, 202, 0.3);
 }
 
@@ -1068,22 +1060,6 @@ body {
 
 .page-footer-logo-wrapper img{
   display: block;
-}
-
-.vk-icon {
-  display: block;
-  background-image: url("../images/footer/vk.svg");
-  background-size: 24px 14px;
-}
-
-.tg-icon {
-  background-image: url("../images/footer/telegram.svg");
-  background-size: 18px 16px;
-}
-
-.youtube-icon {
-  background-image: url("../images/footer/youtube.svg");
-  background-size: 22px 17px;
 }
 
 .phones .phone {
@@ -1126,6 +1102,10 @@ body {
   align-self: center;
 }
 
+.footer-logo-link {
+  display: block;
+}
+
 .filter-range {
   width: 288px;
   font-size: 18px;
@@ -1138,12 +1118,13 @@ body {
   display: inline-flex;
   background-color: #fff;
   align-items: center;
-  padding: 12px 20px;
+  padding: 12px 15px;
   border: none;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: 700;
   border: 3px solid transparent;
+  font-size: inherit;
 }
 
 .price-from-label, .price-to-label{
@@ -1251,17 +1232,13 @@ body {
   position: absolute;
   top: -9px;
   
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   
   background: #fff;
-  border: 8px solid #ffffff;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
-}
-  
-.range-toggle:hover {
-  background: #1c4f80;
 }
   
 .range-toggle-min {
