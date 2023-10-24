@@ -250,7 +250,7 @@ body {
 }
 
 .button-small {
-  padding: 8px 20px;
+  padding: 8px 18px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -431,11 +431,11 @@ body {
   display: block;
   width: 60px;
   height: 2px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
   margin: 0 auto 30px;
 }
 
-.advantages-item:first-child p::before, .advantages-item:last-child p::before {
+.advantages-item.wide-item p::before {
   content: ' ';
   display: block;
   width: 60px;
@@ -635,10 +635,6 @@ body {
   font-family: inherit;
 }
 
-.input-checkbox, .input-radio {
-  display: none;
-}
-
 .input-checkbox + span::before, .input-checkbox:checked + span::before {
   content: ' ';
   display:inline-block;
@@ -649,6 +645,7 @@ body {
   margin-right: 16px;
   vertical-align: bottom;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .input-checkbox:checked + span::before {
@@ -657,12 +654,22 @@ body {
   background-repeat: no-repeat;
 }
 
+.input-checkbox:hover + span {
+  color:rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
 .input-checkbox:hover + span::before {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
 .input-checkbox:focus + span::before {
   border:3px solid #83B3D3;
+}
+
+.input-checkbox:active + span {
+  color:rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .input-checkbox:active + span::before {
@@ -679,6 +686,7 @@ body {
   margin-right: 16px;
   vertical-align: bottom;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .input-radio:checked + span::before {
@@ -691,6 +699,11 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.input-radio:hover + span {
+  color:rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
 .input-radio:focus + span::before {
   border:3px solid #83B3D3;
 }
@@ -699,15 +712,24 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.input-radio:active + span {
+  color:rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
 .sort {
   border: 2px solid #E5E5E5;
   height: 49px;
   width: 290px;
   box-sizing: border-box;
-  padding-right: 14px 21px;
+  padding: 0px 20px;
   background-color: #fff;
   font-size: 18px;
   line-height: 21px;
+  appearance: none;
+  background-image: url("../images/filter/select-arrow.svg");
+  background-position: right 20px center;
+  background-repeat: no-repeat;
 }
 
 .sort:hover {
@@ -721,6 +743,7 @@ body {
 .sort:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   color:rgba(0, 0, 0, 0.3);
+  background-image: url("../images/filter/select-arrow-disabled.svg");
 }
 
 .sort_wrapper {
@@ -884,7 +907,7 @@ body {
 
 .catalog-item-buttons-wrapper {
   display: grid;
-  gap:20px;
+  gap:16px 20px;
   grid-template-columns:repeat(2, 140px);
   margin-top: auto;
 }
@@ -910,13 +933,22 @@ body {
   background-image: url("../images/hotels/stars-4.svg");
 }
 
-.catalog-item-price{
+/*.catalog-item-price{
   font-size: 18px;
   line-height: 21px;
   margin-top: 0px;
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
+}*/
+
+.catalog-item-buttons-wrapper .hotel-type, .catalog-item-buttons-wrapper .price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-item-buttons-wrapper .price {
+  text-align: right;
 }
 
 .catalog-navigation-links {
@@ -1014,11 +1046,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-footer-socials .social-link:hover path, .page-footer-socials .social-link:focus path{
-  fill: #68A2CA;
+.page-footer-socials .social-link svg{
+  color:#83B3D3;
 }
-.page-footer-socials .social-link:active path{
-  fill:rgba(104, 162, 202, 0.3);
+
+.page-footer-socials .social-link:hover svg, .page-footer-socials .social-link:focus svg{
+  color: #68A2CA;
+}
+.page-footer-socials .social-link:active svg{
+  color:rgba(104, 162, 202, 0.3);
 }
 
 .page-footer .phones {
@@ -1070,16 +1106,20 @@ body {
   color:rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo:hover path{
-  fill: #756157;
+.footer-logo {
+  color:#000;
 }
 
-.footer-logo:focus path{
-  fill: #756157;
+.footer-logo:hover {
+  color: #756157;
 }
 
-.footer-logo:active path{
-  fill: rgba(117, 97, 87, 0.3);
+.footer-logo:focus {
+  color: #756157;
+}
+
+.footer-logo:active svg {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .page-footer-logo-wrapper {
