@@ -359,6 +359,7 @@ body {
 .advantage-image {
   display: block;
   object-fit: contain;
+  height: 100%;
 }
 
 .reversed-item .advantage-image-wrapper {
