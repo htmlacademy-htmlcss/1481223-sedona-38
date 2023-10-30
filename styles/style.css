@@ -1307,6 +1307,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  display: none;
 }
 
 .modal {
@@ -1453,4 +1454,59 @@ body {
 .modal-search-submit:active {
   background-color:#68A2CA;
   opacity: 0.3;
+}
+.tooltip {
+  margin-top: 14px;
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  position:relative;
+}
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding: 15px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 30px 0px #0000004D;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/modal/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.modal-show {
+  display: block;
 }
