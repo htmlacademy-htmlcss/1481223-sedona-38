@@ -112,6 +112,14 @@ body {
   padding: 20px 16px;
 }
 
+.header-menu-item .header-menu-item-link:hover {
+  opacity: 0.6;
+}
+
+.header-menu-item .header-menu-item-link:active {
+  opacity: 0.3;
+}
+
 .header-menu-item.is-active .header-menu-item-link {
   text-decoration:underline;
   text-decoration-color: #756257;
