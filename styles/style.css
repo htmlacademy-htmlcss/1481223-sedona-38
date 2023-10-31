@@ -88,7 +88,7 @@ body {
 .header-navigation{
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  width: 712px;
   margin-right: 20px;
 }
 
@@ -125,6 +125,8 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  max-width: 176px;
+  align-content: flex-start;
 }
 
 .header-right-menu-list .search-icon, .header-right-menu-list .favorite-icon {
