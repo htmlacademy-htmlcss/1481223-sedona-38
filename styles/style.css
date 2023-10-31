@@ -212,7 +212,7 @@ body {
   color:rgba(255, 255, 255, 0.3);
 }
 
-.button:disabled {
+.button:disabled, .button-disabled {
   background-color: #E5E5E5;
   color:#FFFFFF;
 }
@@ -297,7 +297,6 @@ body {
 }
 
 .button-reset:focus-visible {
-  outline: none;
   background-color: transparent;
   border: 3px solid #83B3D3;
 }
@@ -767,10 +766,6 @@ body {
   border: 2px solid #68A2CA;
 }
 
-.sort:focus-visible {
-  outline: none;
-}
-
 .sort:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   color:rgba(0, 0, 0, 0.3);
@@ -839,7 +834,9 @@ body {
 
 .catalog-controls-buttons {
   display: flex;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 160px;
 }
 
 .catalog-controls-button { 
@@ -861,7 +858,6 @@ body {
 
 .catalog-controls-button:focus-visible {
   border: 2px solid #68A2CA;
-  outline: none;
 }
 
 .catalog-controls-button:active {
@@ -950,18 +946,21 @@ body {
 .stars {
   width:140px;
   min-height: 37px;
+  background-image: url("../images/hotels/star.svg");
+  background-repeat: space no-repeat;
+  background-position-y: center;
 }
 
 .stars-2 {
-  background-image: url("../images/hotels/stars-2.svg");
+  width: 48px;
 }
 
 .stars-3 {
-  background-image: url("../images/hotels/stars-3.svg");
+  width: 72px;
 }
 
 .stars-4 {
-  background-image: url("../images/hotels/stars-4.svg");
+  width: 96px;
 }
 
 .catalog-item-buttons-wrapper .hotel-type, .catalog-item-buttons-wrapper .price {
@@ -1175,7 +1174,6 @@ body {
 }
 
 .filter-range input:focus-visible {
-  outline: none;
   border: 3px solid #83B3D3;
 }
 
@@ -1237,7 +1235,6 @@ body {
   
   background: none;
   border: none;
-  outline: none;
 }
   
 .range-controls {
@@ -1292,7 +1289,6 @@ body {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  outline: none;
   cursor: pointer;
 }
   
@@ -1348,7 +1344,6 @@ body {
 .modal-close-button:focus-visible {
   background-color: #E6E6E6;
   border: 3px solid #83B3D3;
-  outline: none;
 }
 .modal-close-button:active {
   background-color: #E6E6E6;
@@ -1393,7 +1388,6 @@ body {
 .modal-input:focus-visible {
   opacity: 0.6;
   border: 3px solid #83B3D3;
-  outline:none;
 }
 .modal-input-title {
   font-size: 20px;
