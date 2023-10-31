@@ -664,7 +664,7 @@ body {
   font-family: inherit;
 }
 
-.input-checkbox + span::before, .input-checkbox:checked + span::before {
+.input-checkbox + span.markup, .input-checkbox:checked + span.markup {
   content: ' ';
   display:inline-block;
   height: 20px;
@@ -677,18 +677,18 @@ body {
   box-sizing: border-box;
 }
 
-.input-checkbox:checked + span::before {
+.input-checkbox:checked + span.markup {
   background-image: url("../images/filter/check.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.input-checkbox:hover + span {
+.input-checkbox:hover ~ span.chexbox-text {
   color:rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
 
-.input-checkbox:hover + span::before {
+.input-checkbox:hover + span.markup {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -696,16 +696,16 @@ body {
   border:3px solid #83B3D3;
 }
 
-.input-checkbox:active + span {
+.input-checkbox:active ~ span.chexbox-text {
   color:rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
-.input-checkbox:active + span::before {
+.input-checkbox:active + span.markup {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.input-radio + span::before, .input-radio:checked span::before {
+.input-radio + span.markup, .input-radio:checked span.markup {
   content: ' ';
   display:inline-block;
   height: 20px;
@@ -718,30 +718,30 @@ body {
   box-sizing: border-box;
 }
 
-.input-radio:checked + span::before {
+.input-radio:checked + span.markup {
   background-image: url("../images/filter/radio.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.input-radio:hover + span::before {
+.input-radio:hover + span.markup {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.input-radio:hover + span {
+.input-radio:hover ~ span.radio-text {
   color:rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
 
-.input-radio:focus-visible + span::before {
+.input-radio:focus-visible + span.markup {
   border:3px solid #83B3D3;
 }
 
-.input-radio:active + span::before {
+.input-radio:active + span.markup {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.input-radio:active + span {
+.input-radio:active ~ span.radio-text {
   color:rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
