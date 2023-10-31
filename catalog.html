@@ -53,14 +53,14 @@
           <fieldset class='price-range'>
             <legend class="filter-title">Стоимость, ₽:</legend>
             <div class="filter-range">
-              <label class="price-from-label"><input class="price-from" type="text" value="0"><span>от</span></label>
-              <label class="price-to-label"><input class="price-to" type="text" value="9000"><span>до</span></label>  
+              <label class="price-from-label"><input class="price-from" type="text" name="min-price" value="0"><span>от</span></label>
+              <label class="price-to-label"><input class="price-to" type="text" name="max-price" value="9000"><span>до</span></label>  
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="width: 71%;margin-left: 0%;"></div>
                 </div>
-                <button class="range-toggle range-toggle-min" style="left: 0%;"></button>
-                <button class="range-toggle range-toggle-max" style="left:71%;"></button>
+                <button type="button" class="range-toggle range-toggle-min" style="left: 0%;"></button>
+                <button type="button" class="range-toggle range-toggle-max" style="left:71%;"></button>
               </div>
             </div>
           </fieldset>
