@@ -700,7 +700,7 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.input-checkbox:focus-visible + span::before {
+.input-checkbox:focus-visible + span.markup {
   border:3px solid #83B3D3;
 }
 
