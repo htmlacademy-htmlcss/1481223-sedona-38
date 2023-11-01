@@ -1425,6 +1425,7 @@ body {
   background-image: url("../images/modal/date.svg");
   background-position: right 20px center;
   background-repeat: no-repeat;
+  border-radius: 4px;
 }
 .modal-counter {
   width: 110px;
@@ -1433,10 +1434,20 @@ body {
   border: none;
   box-sizing: border-box;
   padding: 0 40px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
 }
 .label-counter {
   width: 247px;
 }
+
+.label-counter:nth-child(2) {
+  width: 242px;
+}
+
 .modal-counters-wrapper {
   display: flex;
   flex-wrap: wrap;
