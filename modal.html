@@ -156,24 +156,24 @@
                     </div>
                 </label>
                 <div class="modal-counters-wrapper">
-                    <label class="modal-from-label label-counter">
-                        <span class="modal-input-title">Взрослые:</span>
+                    <div class="modal-from-label label-counter">
+                        <label for="mans" class="modal-input-title">Взрослые:</label>
                         <div class="modal-counter-wrapper">
                           <button class="modal-counter-button button-minus" type="button">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
                             </svg>
                           </button>
-                          <input type="text" name="count-mans" class="modal-counter" value="2">
+                          <input id="mans" type="text" name="count-mans" class="modal-counter" value="2">
                           <button class="modal-counter-button button-plus" type="button">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
                             </svg>
                           </button>
                         </div>
-                    </label>
-                    <label class="modal-from-label label-counter">
-                        <span class="modal-input-title">Дети:</span>
+                    </div>
+                    <div class="modal-from-label label-counter">
+                        <label for="childs" class="modal-input-title">Дети:</label>
                         <span class="tooltip">
                           <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,14 +189,14 @@
                               <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
                             </svg>
                           </button>
-                          <input type="text" name="count-children" class="modal-counter" value="2">
+                          <input id="childs" type="text" name="count-children" class="modal-counter" value="2">
                           <button class="modal-counter-button button-plus" type="button">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
                             </svg>
                           </button>
                         </div>
-                    </label>
+                    </div>
                 </div>
                 <button class="button modal-search-submit" type="submit">Найти</button>
             </form>
