@@ -164,10 +164,10 @@ body {
 }
 .favorite-count {
   color: #fff;
-  width:20px;
-  height: 20px;
+  min-width:20px;
+  min-height: 20px;
   background-color: #7DB54F;
-  border-radius: 50%;
+  border-radius: 9999px;
   display: flex;
   font-size: 10px;
   line-height: 10px;
@@ -176,6 +176,8 @@ body {
   position: absolute;
   top:11px;
   right:4px;
+  box-sizing: border-box;
+  padding: 2px;
 }
 
 .buttons-wrapper{
@@ -1050,8 +1052,8 @@ body {
   padding-left: 70px;
   padding-right: 70px;
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .page-footer-socials {
@@ -1063,6 +1065,7 @@ body {
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  align-self: center;
 }
 
 .page-footer-socials .social-link {
@@ -1105,6 +1108,7 @@ body {
   text-decoration: none;
   text-align: center;
   color:#000;
+  margin-left: 20px;
 }
 
 .phones .phone:hover {
@@ -1137,6 +1141,7 @@ body {
 
 .page-footer-logo-wrapper {
   align-self: center;
+  justify-self: end;
 }
 
 .footer-logo-link {
