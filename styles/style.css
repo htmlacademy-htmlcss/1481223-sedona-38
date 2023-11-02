@@ -1161,6 +1161,7 @@ body {
   background-color: #fff;
   align-items: center;
   padding: 12px 15px;
+  padding-right: 35px;
   border: none;
   box-sizing: border-box;
   font-family: inherit;
@@ -1252,7 +1253,7 @@ body {
   
 .range-controls {
   position: relative;
-  margin-top: 46px;
+  margin-top: 45px;
 }
   
 .range-controls .scale {
@@ -1263,14 +1264,14 @@ body {
   
 .range-controls .bar {
   width: 80%;
-  height: 2px;
+  height: 4px;
   
   background: #ffffff;
 }
   
 .range-toggle {
   position: absolute;
-  top: -9px;
+  transform: translateY(-50%);
   
   width: 20px;
   height: 20px;
