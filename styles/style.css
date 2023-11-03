@@ -124,7 +124,7 @@ body {
   text-decoration:underline;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
-  text-underline-offset: 21px;
+  text-underline-offset: 23px;
 }
 
 .header-right-menu-list {
@@ -812,7 +812,7 @@ body {
 }
 
 .filter .infrastrucure {
-  margin-right: 70px;
+  margin-right: 66px;
   width: 150px;
 }
 
@@ -1053,7 +1053,7 @@ body {
   padding-right: 70px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .page-footer-socials {
@@ -1108,7 +1108,7 @@ body {
   text-decoration: none;
   text-align: center;
   color:#000;
-  margin-left: 20px;
+  margin-left: 27px;
 }
 
 .phones .phone:hover {
@@ -1123,19 +1123,19 @@ body {
   color:rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo {
+.footer-logo-link .footer-logo {
   color:#000;
 }
 
-.footer-logo:hover {
+.footer-logo-link:hover .footer-logo {
   color: #756157;
 }
 
-.footer-logo:focus-visible {
+.footer-logo-link:focus-visible .footer-logo {
   color: #756157;
 }
 
-.footer-logo:active svg {
+.footer-logo-link:active .footer-logo{
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -1160,7 +1160,7 @@ body {
   display: inline-flex;
   background-color: #fff;
   align-items: center;
-  padding: 12px 15px;
+  padding: 12px 19px;
   padding-right: 35px;
   border: none;
   box-sizing: border-box;
@@ -1178,7 +1178,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top:0;
-  right:20px;
+  right:18px;
 }
 .price-from {
   border-radius: 4px 0px 0px 4px;
@@ -1370,6 +1370,7 @@ body {
   margin-top: 0;
   margin-bottom: 64px;
   text-transform: uppercase;
+  padding-right: 40px;
 }
 .modal-from-label {
   display: flex;
@@ -1410,6 +1411,8 @@ body {
   padding: 12px 0;
   display: block;
   color: #000;
+  max-width: 120px;
+  align-self: flex-start;
 }
 .form-modal-input-text {
   color:#333;
