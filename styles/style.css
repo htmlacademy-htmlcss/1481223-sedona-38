@@ -768,7 +768,7 @@ body {
   line-height: 21px;
   appearance: none;
   background-image: url("../images/filter/select-arrow.svg");
-  background-position: right 20px center;
+  background-position: right 17px center;
   background-repeat: no-repeat;
 }
 
@@ -1430,6 +1430,9 @@ body {
   background-position: right 20px center;
   background-repeat: no-repeat;
   border-radius: 4px;
+}
+.input-date::placeholder {
+  color:rgba(0, 0, 0, 0.6);
 }
 .modal-counter {
   width: 110px;
