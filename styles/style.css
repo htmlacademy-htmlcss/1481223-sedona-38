@@ -110,6 +110,8 @@ body {
   text-decoration: none;
   display: block;
   padding: 20px 16px;
+  z-index: 3;
+  position: relative;
 }
 
 .header-menu-item .header-menu-item-link:hover {
@@ -1446,6 +1448,12 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+  border-radius: 4px;
+  appearance: textfield;
+}
+.modal-counter::-webkit-outer-spin-button, .modal-counter::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .label-counter {
   width: 247px;
@@ -1453,6 +1461,7 @@ body {
 
 .label-counter:nth-child(2) {
   width: 242px;
+  flex-wrap: nowrap;
 }
 
 .modal-counters-wrapper {
@@ -1485,8 +1494,9 @@ body {
 .tooltip {
   margin-top: 14px;
   margin-left: 10px;
-  width: 16px;
-  height: 16px;
+  margin-right: 10px;
+  width: 27px;
+  height: 27px;
   z-index: 2;
   position:relative;
 }
@@ -1511,7 +1521,6 @@ body {
   box-shadow: 0px 15px 30px 0px #0000004D;
   position: absolute;
   margin-top: 15px;
-  margin-left: 4px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -1555,6 +1564,7 @@ body {
   align-items: center;
   position: absolute;
   top:0;
+  border-radius: 4px;
 }
 
 .modal-counter-button:hover {
