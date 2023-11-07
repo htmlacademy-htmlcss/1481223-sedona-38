@@ -143,20 +143,20 @@
             </button>
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
-                <label class="modal-from-label">
-                    <span class="modal-input-title">Дата Заезда:</span>
+                <div class="modal-from-label">
+                    <span class="modal-input-title"><label for="date-start">Дата Заезда:</label></span>
                     <div class="input-wrapper">
-                        <input class="modal-input input-date" type="text" name="date" placeholder="Укажите дату" value="27 апреля 2020">
+                        <input class="modal-input input-date" id="date-start" type="text" name="date" placeholder="Укажите дату" value="27 апреля 2020">
                         <span class="form-modal-input-text error">Мы не можем отправить вас в прошлое.</span>
                     </div>
-                </label>
-                <label class="modal-from-label">
-                    <span class="modal-input-title">Дата Выезда:</span>
+                </div>
+                <div class="modal-from-label">
+                    <span class="modal-input-title"><label for="date-riding">Дата Выезда:</label></span>
                     <div class="input-wrapper">
-                        <input class="modal-input input-date" type="text" name="date-start" placeholder="Укажите дату" value="1 сентября 2023">
+                        <input class="modal-input input-date" id="date-riding" type="text" name="date-start" placeholder="Укажите дату" value="1 сентября 2023">
                         <span class="form-modal-input-text">На эти даты есть свободные номера. Пока есть.</span>
                     </div>
-                </label>
+                </div>
                 <div class="modal-counters-wrapper">
                     <div class="modal-from-label label-counter">
                         <label for="mans" class="modal-input-title">Взрослые:</label>
