@@ -777,7 +777,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.input-checkbox:hover ~ span.chexbox-text {
+.input-checkbox:hover ~ span.checkbox-text {
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
@@ -791,7 +791,7 @@ body {
   box-shadow: 0px 4px 10px 0px #00000040;
 }
 
-.input-checkbox:active ~ span.chexbox-text {
+.input-checkbox:active ~ span.checkbox-text {
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
@@ -1416,11 +1416,19 @@ body {
   width: 20px;
   height: 20px;
 
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   transform: translateY(-50%);
+}
+
+.range-toggle:hover {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.6);
+}
+
+.range-toggle:active {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .range-toggle-min {
