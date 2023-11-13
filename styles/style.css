@@ -422,6 +422,10 @@ body {
   padding-bottom: 64px;
 }
 
+.advantage-image-wrapper {
+  background-color:#82b3d3;
+}
+
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
@@ -1073,6 +1077,7 @@ body {
 
 .catalog-list img {
   display: block;
+  background-color: #beceee;
 }
 
 .stars {
