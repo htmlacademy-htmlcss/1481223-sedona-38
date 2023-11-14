@@ -151,10 +151,25 @@ body {
   list-style: none;
 }
 
+.header-right-menu-list .search-icon {
+  background-image: url("../images/header/search.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header-right-menu-list .favorite-icon {
+  background-image: url("../images/header/favorite.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .header-right-menu-list .search-icon,
 .header-right-menu-list .favorite-icon {
   display: block;
   padding: 22px 12px;
+  min-height: 64px;
+  min-width: 44px;
+  box-sizing: border-box;
 
   text-decoration: none;
 }
@@ -1212,7 +1227,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-footer-socials .social-link svg {
+.social-link svg {
   color: #83b3d3;
 }
 
